@@ -4,6 +4,12 @@ variable "create_vpc" {
   default     = true
 }
 
+variable "create_public_route_table_associations" {
+  description = "Controls if public route table associations should be created"
+  type        = bool
+  default     = true
+}
+
 variable "name" {
   description = "Name to be used on all the resources as identifier"
   type        = string
